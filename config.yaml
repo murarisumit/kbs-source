@@ -1,0 +1,18 @@
+baseURL: "http://example.org/"
+languageCode: "en-us"
+title: "Tils and bookmarks"
+theme: "hugonews"
+
+taxonomies:
+  tag: "tags"
+  category: "categories"
+  site: "sites"
+
+
+pygmentsStyle: "vs"
+#pygmentsStyle: "monokai"
+pygmentsCodefencesGuessSyntax: true
+pygmentsUseClasses: true
+pygmentsCodeFences: true
+pygmentsOptions: "linenos=true,tabWidth=2"
+
