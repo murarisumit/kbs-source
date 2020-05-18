@@ -1,7 +1,7 @@
 ---
 title: "Hugo Tags List"
 date: 2020-05-17T18:09:46+05:30
-draft: true
+draft: false
 tags:
 - hugo
 ---
