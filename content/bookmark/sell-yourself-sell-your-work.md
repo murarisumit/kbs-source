@@ -2,7 +2,7 @@
 title: "Sell Yourself, Sell Your Work"
 date: 2020-05-21T08:39:21+05:30
 itemurl: "https://web.archive.org/web/20200521030811/https://www.solipsys.co.uk/new/SellYourselfSellYourWork.html"
-sites: "https://www.solipsys.co.uk/"
+sites: "www.solipsys.co.uk"
 tags: ["communication","hn-post"]
 draft: false
 ---
