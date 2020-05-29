@@ -4,6 +4,6 @@
 [submodule "public"]
 	path = public
 	url = git@github.com:murarisumit/kbs.git
-[submodule "kbs-content"]
-	path = kbs-content
+[submodule "content"]
+	path = content
 	url = git@github.com:murarisumit/kbs-content.git
