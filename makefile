@@ -1,7 +1,7 @@
 SHELL := /usr/bin/env bash
 run:
-	hugo server
+	hugo server -D
 
 build:
-	hugo -D
+	hugo
 
