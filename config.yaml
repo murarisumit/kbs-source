@@ -7,7 +7,7 @@ theme: "hugonews"
 
 taxonomies:
   tag: "tags"
-  category: "categories"
+  category: "category"
   site: "sites"
 
 contentDir: "content"
