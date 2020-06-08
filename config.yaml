@@ -1,8 +1,8 @@
 baseURL: "https://www.yinyangi.in/kbs"
 languageCode: "en-us"
-title: "Tils and bookmarks"
+title: "knowledge base"
 description: "My knowledge base, place where my tils and bookmarks reside"
-paginate: 30
+paginate: 20
 theme: "hugonews"
 
 taxonomies:
