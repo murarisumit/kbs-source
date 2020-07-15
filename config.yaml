@@ -11,6 +11,8 @@ taxonomies:
   site: "sites"
 
 contentDir: "content"
+enableGitInfo: true
+
 
 pygmentsStyle: "vs"
 #pygmentsStyle: "monokai"
