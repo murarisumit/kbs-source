@@ -1,4 +1,6 @@
 baseURL: "https://kbs.murarisumit.in/"
+params:
+  email: "email@murarisumit.in"
 languageCode: "en-us"
 title: "knowledge base"
 description: "My knowledge base, place where my tils and bookmarks reside"
