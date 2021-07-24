@@ -5,6 +5,11 @@ import json
 
 
 
+AUTOCOMPLETE_DAEMON_EP = "http://localhost:5050"
+TAGS_URL = f"{AUTOCOMPLETE_DAEMON_EP}/tags"
+CATEGORIES_URL = f"{AUTOCOMPLETE_DAEMON_EP}/categories"
+
+
 class MyCompletionsListener(sublime_plugin.EventListener):
     def on_query_completions(self, view, prefix, locations):
         loc = locations[0]
@@ -13,11 +18,9 @@ class MyCompletionsListener(sublime_plugin.EventListener):
             frontmatter_type = current_line.split(":")[0]
             completions = []
             if frontmatter_type == "tags":
-                tags_url = "http://localhost:5050/tags"
-                completions = fetch_completions(tags_url)
+                completions = fetch_completions(TAGS_URL)
             elif frontmatter_type == "category":
-                categories_url = "http://localhost:5050/categories"
-                completions = fetch_completions(categories_url)
+                completions = fetch_completions(CATEGORIES_URL)
             return completions
         return ""
         #======================================================
