@@ -7,3 +7,6 @@
 [submodule "content"]
 	path = content
 	url = git@github.com:murarisumit/kbs-content.git
+[submodule "tools/sublime-hugo-autocompletion"]
+	path = tools/sublime-hugo-autocompletion
+	url = https://github.com/murarisumit/sublime-hugo-autocompletion
