@@ -8,3 +8,8 @@ vbox:
 build:
 	hugo
 
+update-submodule:
+	git submodule update --init --recursive
+
+tmux:
+	tmuxp load ./tmuxp.yaml

@@ -1,0 +1,20 @@
+session_name: hugo-autocomplete
+windows:
+- focus: 'true'
+  layout: 614b,183x49,0,0[183x24,0,0{91x24,0,0,0,91x24,92,0,3},183x24,0,25{91x24,0,25,1,91x24,92,25,2}]
+  options:
+    automatic-rename: 'off'
+  panes:
+  - shell_command:
+    - cd $(pwd)
+    - make local
+  - shell_command:
+    - cd $(pwd)/content
+    - bash
+  - shell_command:
+    - cd $(pwd)/tools/sublime-hugo-autocompletion/hugo-autocomplete
+    - make run
+  - focus: 'true'
+    shell_command:
+    - cd $(pwd)/themes
+  window_name: bash
