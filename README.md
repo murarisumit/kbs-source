@@ -36,12 +36,12 @@
 
 5. Now, from the root of your website, create a bookmark item using the `hugo` CLI
     ```bash
-    hugo new til/dark-mode-website-css.md
-    hugo new bookmark/dark-mode-website-css.md
-    hugo new snippet/dark-mode-website-css.md
+    hugo new tils/dark-mode-website-css.md
+    hugo new bookmarks/dark-mode-website-css.md
+    hugo new snippets/dark-mode-website-css.md
     ```
 
-6. Edit the newly created file to add the necessary metadata. The file will be in your content directory in `/content/til/`
+6. Edit the newly created file to add the necessary metadata. The file will be in your content directory in `/content/tils/`
     ```markdown
     ---
     title: "Dark mode in a website with CSS"
