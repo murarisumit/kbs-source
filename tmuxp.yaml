@@ -9,12 +9,29 @@ windows:
     - cd $(pwd)
     - make local
   - shell_command:
-    - cd $(pwd)/content
-    - bash
+    - cd $(pwd)/themes
+    - git checkout master
+    - git pull origin master
   - shell_command:
     - cd $(pwd)/tools/sublime-hugo-autocompletion/hugo-autocomplete
     - make run
   - focus: 'true'
     shell_command:
     - cd $(pwd)/themes
-  window_name: bash
+  window_name: background
+- layout: 614b,183x49,0,0[183x24,0,0{91x24,0,0,0,91x24,92,0,3},183x24,0,25{91x24,0,25,1,91x24,92,25,2}]
+  options:
+    automatic-rename: 'off'
+  panes:
+  - shell_command:
+    - cd $(pwd)/content
+    - git checkout master
+    - git pull origin master
+  - shell_command:
+    - cd $(pwd)/public
+    - git checkout master
+    - git pull origin master
+  - shell_command:
+    - cat $(pwd)/README.md
+  - focus: 'true'
+  window_name: work-dir
