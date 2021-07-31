@@ -5,9 +5,12 @@ local:
 vbox:
 	hugo serve -D --bind 192.168.78.100 --baseURL 192.168.78.100/kbs
 
-build:
+build: clean
 	hugo
 
+clean:
+	rm -rf public
+	
 update-submodule:
 	git submodule update --init --recursive
 
