@@ -1,4 +1,5 @@
-baseURL: "https://kbs.murarisumit.in/"  
+baseURL: "https://kbs.murarisumit.in/"
+author: 
 languageCode: "en-us"
 title: "knowledge base"
 description: "My knowledge base, place where my tils and bookmarks reside"
@@ -9,6 +10,9 @@ taxonomies:
   tag: "tags"
   category: "category"
   site: "sites"
+  year: "year"
+  month: "month"
+  author: "author"
 
 contentDir: "content"
 enableGitInfo: true
@@ -20,7 +24,6 @@ pygmentsCodefencesGuessSyntax: true
 pygmentsUseClasses: true
 pygmentsCodeFences: true
 pygmentsOptions: "linenos=true,tabWidth=2"
-
 params:
   email: "email@murarisumit.in"
   custom_css: 
