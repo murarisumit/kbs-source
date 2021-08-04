@@ -1,6 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Lastmod }}
+date: {{ .Date }}
 created: {{ .Date}}
 itemurl: ""
 sites: ""
