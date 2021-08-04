@@ -1,11 +1,17 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-lastmod: {{ .Date }}
+author: "murarisumit"
+category: {{ .Section }}
+
+date: {{ .Date }}
 publishdate: {{ .Date}}
+year: {{ .Date | dateFormat "2006" }}
+month: {{ .Date | dateFormat "2006-01" }}
+
+
 itemurl: ""
 sites: ""
 tags: []
-category: {{ .Section }}
 draft: false
 ---
 
