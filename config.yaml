@@ -34,6 +34,7 @@ pygmentsOptions: "linenos=true,tabWidth=2"
 params:
   author: "murarisumit"
   email: "email@murarisumit.in"
+  description: "My knowledge base, place where my tils and bookmarks reside"
   custom_css: 
     - "css/override.css"
   social:
