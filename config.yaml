@@ -31,6 +31,8 @@ pygmentsCodefencesGuessSyntax: true
 pygmentsUseClasses: true
 pygmentsCodeFences: true
 pygmentsOptions: "linenos=true,tabWidth=2"
+
+enableEmoji: true
 params:
   author: "murarisumit"
   email: "email@murarisumit.in"
