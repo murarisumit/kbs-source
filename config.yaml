@@ -1,4 +1,6 @@
 baseURL: "https://kbs.murarisumit.in/"
+title: "knowledge base"
+description: "My knowledge base, place where my tils and bookmarks reside"
  
 paginate: 20
 theme: "hugonews"
@@ -10,8 +12,9 @@ permalinks:
   
 languages:
   en:
-    title: "knowledge base"
-    description: "My knowledge base, place where my tils and bookmarks reside"
+    params:
+      title: "knowledge base en"
+      description: "My knowledge base, place where my tils and bookmarks reside"
 
 
 taxonomies:

@@ -1,0 +1,120 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "summary",
+          "name": "summary",
+          "type": "string"
+        },
+        {
+          "title": "author",
+          "name": "author",
+          "type": "string"
+        },
+        {
+          "title": "category",
+          "name": "category",
+          "type": "categories"
+        },
+        {
+          "title": "url",
+          "name": "url",
+          "type": "string"
+        },
+        {
+          "title": "longurl",
+          "name": "longurl",
+          "type": "string"
+        },
+        {
+          "title": "date",
+          "name": "date",
+          "type": "datetime"
+        },
+        {
+          "title": "publishdate",
+          "name": "publishdate",
+          "type": "datetime"
+        },
+        {
+          "title": "year",
+          "name": "year",
+          "type": "number"
+        },
+        {
+          "title": "month",
+          "name": "month",
+          "type": "datetime"
+        },
+        {
+          "title": "tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "itemurl",
+          "name": "itemurl",
+          "type": "string"
+        },
+        {
+          "title": "sites",
+          "name": "sites",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "hugo",
+  "frontMatter.content.publicFolder": "static",
+  "frontMatter.preview.host": "http://localhost:1313",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "content",
+      "path": "[[workspace]]/content"
+    },
+    {
+      "path": "[[workspace]]/content/bookmarks",
+      "title": "bookmarks"
+    },
+    {
+      "path": "[[workspace]]/content/ideas",
+      "title": "ideas"
+    },
+    {
+      "path": "[[workspace]]/content/posts",
+      "title": "posts"
+    },
+    {
+      "path": "[[workspace]]/content/snippets",
+      "title": "snippets"
+    },
+    {
+      "path": "[[workspace]]/content/decisions",
+      "title": "decisions"
+    },
+    {
+      "path": "[[workspace]]/content/quotes",
+      "title": "quotes"
+    },
+    {
+      "title": "tils",
+      "path": "[[workspace]]/content/tils"
+    }
+  ],
+  "frontMatter.git.enabled": false
+}
