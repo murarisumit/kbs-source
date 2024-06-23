@@ -9,7 +9,7 @@ vbox:
 	hugo serve -D --bind 192.168.78.100 --baseURL 192.168.78.100/kbs
 
 build: 
-	hugo
+	hugo --minify
 
 clean:
 	rm -rf public
@@ -19,3 +19,11 @@ update-submodule:
 
 tmux:
 	tmuxp load ./tmuxp.yaml
+
+new-post:
+	@read -p "Enter the title of the post: " title; \
+	hugo new posts/$$title.md
+
+new-tils:
+	@read -p "Enter the title of the post: " title; \
+	hugo new tils/$$title.md

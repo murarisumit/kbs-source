@@ -1,0 +1,36 @@
+# workflow to publish the site to GitHub Pages
+name: Publish
+on:
+  push:
+    branches:
+      - master
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@v2
+          name: Checkout
+        - name: Setup Hugo
+          uses: peaceiris/actions-hugo@v3
+          with:
+            hugo-version: '0.119.0'
+        - name: Build
+          run: hugo --minify
+        
+        - name: Deploy
+          uses: peaceiris/actions-gh-pages@v3
+          if: github.ref == 'refs/heads/main'
+          with:
+            personal_token: ${{ secrets.KBS_PUBLIC_WRITE }}
+            external_repository: murarisumit/kbs
+            publish_dir: ./public
+            publish_branch: gh-pages
+            cname: kbs.murarisumit.in
+            commit_message: ${{ github.event.head_commit.message }}
+            allow_empty_commit: true
+            force_orphan: true
+            clean: true
+            enable_jekyll: false
+            keep_files: true
+            user_name: murarisumit
+            user_email: murari.sumit+githubworkflow@outlook.com
