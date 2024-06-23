@@ -6,6 +6,7 @@ on:
       - master
 jobs:
     build:
+        environment: prod
         runs-on: ubuntu-latest
         steps:
         - uses: actions/checkout@v4
@@ -13,23 +14,23 @@ jobs:
         - name: Setup Hugo
           uses: peaceiris/actions-hugo@v3
           with:
-            hugo-version: '0.119.0'
+            hugo-version: '0.127.0'
+            extended: true
         - name: Build
           run: hugo --minify
-        
+
         - name: Deploy
           uses: peaceiris/actions-gh-pages@v3
-          if: github.ref == 'refs/heads/main'
+          if: github.ref == 'refs/heads/master'
           with:
             personal_token: ${{ secrets.KBS_PUBLIC_WRITE }}
             external_repository: murarisumit/kbs
             publish_dir: ./public
-            publish_branch: gh-pages
+            publish_branch: master
             cname: kbs.murarisumit.in
             commit_message: ${{ github.event.head_commit.message }}
             allow_empty_commit: true
             force_orphan: true
-            clean: true
             enable_jekyll: false
             keep_files: true
             user_name: murarisumit
