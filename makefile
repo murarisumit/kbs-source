@@ -8,11 +8,11 @@ local-nodrafts:
 vbox:
 	hugo serve -D --bind 192.168.78.100 --baseURL 192.168.78.100/kbs
 
-build: 
+build: clean
 	hugo --minify
 
 clean:
-	rm -rf public
+	rm -rf public/*
 	
 update-submodule:
 	git submodule update --init --recursive
