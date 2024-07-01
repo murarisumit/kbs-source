@@ -20,6 +20,10 @@ update-submodule:
 tmux:
 	tmuxp load ./tmuxp.yaml
 
+
+new-bookmark:
+	@read -p "Enter the title of the post: " title; \
+	hugo new bookmarks/$$title.md
 new-post:
 	@read -p "Enter the title of the post: " title; \
 	hugo new posts/$$title.md
