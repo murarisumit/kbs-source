@@ -1,0 +1,4 @@
+{{- /* Link to an X post by status ID: {{< xpost id="123" >}}link text{{< /xpost >}}. Base URL lives in params.xStatusBase. */ -}}
+{{- $base := site.Params.xStatusBase | default "https://x.com/i/status/" -}}
+<a href="{{ printf "%s%s" $base (.Get "id") }}">{{ .Inner | default (printf "X post %s" (.Get "id")) }}</a>
+{{- /**/ -}}
