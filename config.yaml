@@ -1,17 +1,18 @@
-baseURL: "https://kbs.murarisumit.in/"
+baseURL: "https://kbs.yinagi.in/"
 title: "knowledge base"
 description: "My knowledge base, place where my tils and bookmarks reside"
  
 paginate: 20
 theme: "hugonews"
 defaultContentLanguage: en
-languageCode: "en-us"
+locale: "en-us"
 
 permalinks:
   /: :section/:slug
   
 languages:
   en:
+    label: English
     params:
       title: "knowledge base en"
       description: "My knowledge base, place where my tils and bookmarks reside"
@@ -20,7 +21,7 @@ languages:
 taxonomies:
   tag: "tags"
   category: "category"
-  site: "sites"
+  source: "sources"
   year: "year"
   month: "month"
   author: "author"
@@ -38,8 +39,8 @@ pygmentsOptions: "linenos=true,tabWidth=2"
 enableEmoji: true
 params:
   author: "murarisumit"
-  email: "email@murarisumit.in"
-  description: "My knowledge base, place where my tils and bookmarks reside"
+  email: "inbox@yinagi.in"
+  description: "Mi knowledge base, place where tils and bookmarks reside"
   custom_css: 
     - "css/override.css"
   social:
