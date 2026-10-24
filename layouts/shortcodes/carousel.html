@@ -1,0 +1,23 @@
+{{- /* Usage: {{< carousel dir="/images/emudhra" count="10" alt="eMudhra: who can get in the middle" >}}
+       Expects images named slide-01.png ... slide-NN.png in static<dir>. */ -}}
+{{- $dir := .Get "dir" -}}
+{{- $n := int (.Get "count") -}}
+{{- $alt := .Get "alt" | default "Slides" -}}
+{{- if not (.Page.Store.Get "kbCarouselAssets") -}}
+<link rel="stylesheet" href="{{ "css/carousel.css" | relURL }}">
+<script src="{{ "js/carousel.js" | relURL }}" defer></script>
+{{- .Page.Store.Set "kbCarouselAssets" true -}}
+{{- end }}
+<div class="kb-carousel" role="region" aria-roledescription="carousel" aria-label="{{ $alt }}">
+  <div class="kb-track" tabindex="0">
+    {{- range $i := seq $n }}
+    <figure class="kb-slide" aria-label="Slide {{ $i }} of {{ $n }}">
+      <img src="{{ printf "%s/slide-%02d.png" $dir $i | relURL }}" alt="{{ $alt }}, slide {{ $i }} of {{ $n }}" width="1080" height="1350" loading="{{ if eq $i 1 }}eager{{ else }}lazy{{ end }}" decoding="async">
+    </figure>
+    {{- end }}
+  </div>
+  <button class="kb-nav kb-prev" type="button" aria-label="Previous slide" hidden>&#8249;</button>
+  <button class="kb-nav kb-next" type="button" aria-label="Next slide">&#8250;</button>
+  <div class="kb-count" aria-live="polite"><span class="kb-cur">1</span> / {{ $n }}</div>
+  <div class="kb-dots" aria-hidden="true">{{ range seq $n }}<span></span>{{ end }}</div>
+</div>
