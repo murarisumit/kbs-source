@@ -40,6 +40,8 @@ enableEmoji: true
 params:
   author: "murarisumit"
   email: "inbox@yinagi.in"
+  # Username-free X status link base; change here if X changes URLs
+  xStatusBase: "https://x.com/i/status/"
   description: "Mi knowledge base, place where tils and bookmarks reside"
   custom_css: 
     - "css/override.css"
