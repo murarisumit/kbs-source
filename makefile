@@ -2,7 +2,7 @@ SHELL := /usr/bin/env bash
 local:
 	hugo serve -p 1313 --buildDrafts --navigateToChanged
 
-local-nodrafts:
+serve:
 	hugo serve -p 1313 --navigateToChanged
 
 vbox:
